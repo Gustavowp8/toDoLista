@@ -36,6 +36,7 @@ body{
     top: 50%;
     left: 50%;
     padding: 30px 40px;
+    z-index: 1;
 }
 #newtask{
     position: relative;
@@ -116,6 +117,7 @@ h1{
     border-bottom: 2px solid #ffffff;
     cursor: pointer;
     color: white;
+    
 }
 
 .task span{
@@ -145,6 +147,7 @@ h1{
     width: 100%;
     padding: 10px;
     text-align: center;
+    z-index: 2;
 }
 .tema button{
     margin: 5px;
@@ -157,4 +160,21 @@ h1{
     outline: none;
     height: 100%;
     width: 80px;
+}
+
+.game{
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    height: auto;
+    padding: auto;
+    display: block;
+    width: 85%;
+    margin: auto;
+}
+
+@media(max-width: 600px){
+    .game{
+        width: 82%;
+        margin: auto;
+    }
 }
